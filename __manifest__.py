@@ -1,15 +1,12 @@
-# -*- coding: utf-8 -*-
 {
-    "name": "SID Stock Actions (OV matcher)",
-    "summary": "Assign stable XML IDs to existing Stock custom actions/menus/automations (OV) for migration-safe references.",
-    "version": "15.0.1.0.0",
-    "category": "Inventory/Inventory",
-    "license": "LGPL-3",
-    "author": "SIDSA",
-    "website": "",
-    "depends": ["stock", "base_automation"],
+    "name": "SID Stock Actions OV",
+    "version": "15.0.1.0.1",
+    "summary": "Anchor existing stock OV actions with stable xml_ids",
+    "category": "Inventory",
+    "license": "AGPL-3",
+    "depends": ["stock", "base"],
     "data": [],
-    "post_init_hook": "post_init_match_stock_actions_ov",
+    "post_init_hook": "post_init_create_action_xmlids",
     "installable": True,
-    "application": False,
+    "application": False
 }

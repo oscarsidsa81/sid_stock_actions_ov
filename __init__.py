@@ -1,1 +1,1 @@
-from .hooks import post_init_match_stock_actions_ov
+from .hooks import post_init_create_action_xmlids
